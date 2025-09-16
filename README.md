@@ -1,15 +1,15 @@
-### Terre Vent Feu EAU DATA ###
+# Terre Vent Feu EAU DATA 
 _Romuald Courtois, 15/09/2025_
 
-## 1. Introduction ##
+# 1. Introduction ##
 
-# 1.1 Contexte
+## 1.1 Contexte
 
 L’été 2025 a marqué un tournant pour la France en matière d’incendies de forêt. Le 7 août, l’Aude a connu le plus grand incendie depuis 1949, détruisant 17 000 hectares en moins de 48 heures, mobilisant 2 100 pompiers et tous les moyens aériens nationaux, et causant un mort et 13 blessés. Cette catastrophe s’inscrit dans une tendance plus large : le mois de juillet 2025 a été marqué par une série d’incendies exceptionnels sur le territoire méditerranéen, confirmant les projections scientifiques qui prévoient une multiplication par trois de la période à risque d’ici 2050.
 
 Depuis 2006, l’État français collecte et centralise des informations sur ces incendies à travers la BDIFF (Base de Données sur les Incendies de Forêts en France), hébergée par l’IGN. Cette base compile chaque année les données de plus de 9 000 feux avec une précision communale, offrant un potentiel considérable pour la prévention et la gestion du risque incendie.
 
-# 1.2 Problématique
+## 1.2 Problématique
 
 Malgré l’existence de la BDIFF, les données brutes ne permettent pas encore de prédire efficacement les risques d’incendie. Les défis sont nombreux :
 - Fragmentation des données : les fichiers CSV sont disponibles par paquets de 30 000 lignes.
@@ -20,7 +20,7 @@ Malgré l’existence de la BDIFF, les données brutes ne permettent pas encore 
 
 Ces contraintes techniques, combinées au fait que 90 % des départs de feu sont d’origine humaine, rendent indispensable le développement d’outils d’intelligence prédictive pour améliorer la prévention et réduire l’impact des incendies.
 
-# 1.3 Objectifs
+## 1.3 Objectifs
 
 Le projet vise à exploiter la BDIFF pour développer un outil prédictif du risque d’incendie. Plus spécifiquement, il s’agit de :
 
@@ -36,11 +36,11 @@ Le projet vise à exploiter la BDIFF pour développer un outil prédictif du ris
 
 Ainsi, le projet constitue une première étape vers une gestion proactive et scientifique du risque incendie en France.
 
-## 2. Données ou échantillons
+# 2. Données ou échantillons
 
 Les données utilisées proviennent de la **Base de Données sur les Incendies de Forêts en France (BDIFF)**. Cette base nationale, créée en 2006, est gérée par le Ministère de l’Agriculture et hébergée par l’IGN. Elle est mise à jour chaque année et couvre actuellement la période **1973–2024**.
 
-### 2.1 Accès aux données
+## 2.1 Accès aux données
 Les fichiers peuvent être téléchargés depuis le site officiel : [BDIFF – Incendies](https://bdiff.agriculture.gouv.fr/incendies)  
 
 Chaque fichier ZIP contient :
@@ -51,7 +51,7 @@ Chaque fichier ZIP contient :
                       caractéristiques détaillées du feu.  
 - **Mentions légales.pdf** : informations légales relatives à l’usage des données.
 
-### 2.2 Composition des données 
+## 2.2 Composition des données 
 
 - *Année* : année du feu  
 - *Numéro* : code unique attribué au feu  
@@ -112,7 +112,7 @@ Chaque fichier ZIP contient :
                                                  reste intacte, seule une partie de la structure est touchée.
 - *Précision de la donnée* : niveau de qualité et fiabilité de l’enregistrement.
 
-## 3. Chronologie
+## 2.3 Chronologie
 Au fur et a mesure, les informations et la labelisations des données ont évoluées :
 
 **1973 – 2005 : Les premiers enregistrements**
@@ -151,9 +151,7 @@ Réorganisation profonde des catégories de surfaces :
 
 Objectif : rendre les données plus comparables, plus exploitables et conformes aux standards internationaux de suivi des incendies.
 
-## 3. Outils et Technologies ##
-
-# Outils utilisé #
+# 3. Outils et Technologies ##
 
 1. Gestion du projet et développement
 - GitHub : gestion de version et collaboration sur le code source.
@@ -181,9 +179,9 @@ Objectif : rendre les données plus comparables, plus exploitables et conformes 
 - Streamlit : création d’applications web interactives pour présenter les résultats et 
   prédictions.
 
-## 4. Méthodes ##
+# 4. Méthodes 
 
-# 4.1 Description détaillée de la démarche #
+## 4.1 Description détaillée de la démarche 
 
 Le projet consiste à développer un modèle d’intelligence artificielle capable de prédire le risque d’incendie de forêt à l’échelle communale en France. La démarche adoptée se déroule en plusieurs étapes :
 
@@ -377,22 +375,22 @@ Enfin, nous avons pu noté pour chaque ligne de feu. Cependant, 680 feu n'ont pa
 - Évaluation finale : performance mesurée sur l’ensemble test, pour éviter tout 
   surapprentissage et garantir la généralisabilité du modèle.
 
-## 6. Plan d’analyse ##
+# 5. Plan d’analyse 
 
-### 6.1 Méthodes statistiques  
+## 5.1 Méthodes statistiques  
 - **Descriptives** : distribution des surfaces brûlées, fréquences par type de végétation et 
                      origine.  
 - **Série temporelle** : tendances saisonnières et décennales.  
 - **Spatiales** : cartographie des zones à risque (clusters via HDBSCAN).  
 - **Corrélations** : entre surfaces, type de peuplement, conditions climatiques (à venir).  
 
-### 6.2 Visualisations prévues  
+## 5.2 Visualisations prévues  
 - **Cartes interactives** : densité d’incendies par commune.  
 - **Courbes temporelles** : évolution annuelle et saisonnière.  
 - **Histogrammes** : répartition par type de peuplement.  
 - **Matrices de corrélation** : entre variables explicatives et surfaces brûlées.  
 
-## 7. Fiabilité et limites  
+# 6. Fiabilité et limites  
 
 - **Biais temporel** : avant 2006, données incomplètes et hétérogènes.  
 - **Biais de déclaration** : certaines communes enregistrent mieux que d’autres.  
@@ -401,7 +399,7 @@ Enfin, nous avons pu noté pour chaque ligne de feu. Cependant, 680 feu n'ont pa
 - **Limites méthodologiques** : modèle encore limité à la BDIFF, sans intégration 
                                 météorologique.  
 
-## 8. Conclusion  
+# 7. Conclusion  
 
 - **Méthodes** : préparation, enrichissement, modélisation IA.  
 - **Points forts** : dataset unifié (1973–2024), nettoyage rigoureux, pipeline reproductible.  
@@ -412,7 +410,7 @@ Enfin, nous avons pu noté pour chaque ligne de feu. Cependant, 680 feu n'ont pa
   - Développer un outil prédictif opérationnel pour les collectivités. 
 
 
-## 8. Références - Articles, livres, normes, sites web ##
+# 8. Références - Articles, livres, normes, sites web ##
 - BDIFF : https://bdiff.agriculture.gouv.fr/aide/generalites
 - DATA.GOUV : https://www.data.gouv.fr/datasets
 - GeoPandas : https://geopandas.org/en/stable/gallery/index.html
