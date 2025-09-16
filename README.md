@@ -233,7 +233,7 @@ Au total depuis 1973 : environ 4 500 à 4 600 communes françaises ont été con
 
 Pour compléter les noms de communes manquant mais présentant un code INSEE, nous avons télécharger un fichier .csv sur le site du gouvernenement composé des informations sur 35 141 communes.
 
-## Fichiers Communes de France 20025
+## Fichiers Communes de France 2025
 Le fichiers .csv des communes de France comportes les informations :
 - code_insee
 - nom_standard
